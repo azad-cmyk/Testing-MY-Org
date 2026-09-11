@@ -1,0 +1,22 @@
+<template>
+    <lightning-card title="Quote Details">
+        <div class="slds-p-around_medium">
+
+            <lightning-combobox
+                label="Customer Chosen Currency"
+                value={currency}
+                options={currencyOptions}
+                onchange={handleCurrencyChange}>
+            </lightning-combobox>
+
+            <lightning-combobox
+                label="Entity"
+                value={entity}
+                options={entityOptions}
+                disabled={isEntityDisabled}
+                onchange={handleEntityChange}>
+            </lightning-combobox>
+
+        </div>
+    </lightning-card>
+</template>

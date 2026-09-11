@@ -1,0 +1,26 @@
+<template>
+    <!-- Ab direct content render hoga, koi extra button ya wrapping modal nahi -->
+    <div class="slds-p-around_medium">
+        <p class="slds-m-bottom_medium">Update seat quantities for this subscription</p>
+        
+        <lightning-datatable 
+            key-field="id" 
+            data={itemRows} 
+            columns={columns} 
+            draft-values={draftValues}
+            oncellchange={handleCellChange} 
+            hide-checkbox-column 
+            suppress-bottom-bar="true">
+        </lightning-datatable>
+
+        <div class="slds-m-top_medium slds-text-align_right">
+            <button class="slds-button slds-button_neutral" onclick={handleCancel}>Cancel</button>
+            <lightning-button 
+                class="slds-m-left_small" 
+                variant="brand" 
+                label="Update Subscription"
+                onclick={handleSave}>
+            </lightning-button>
+        </div>
+    </div>
+</template>

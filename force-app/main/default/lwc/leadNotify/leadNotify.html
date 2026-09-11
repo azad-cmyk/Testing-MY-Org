@@ -1,0 +1,13 @@
+<template>
+    <lightning-card title="Live Lead Notification">
+        <p>{message}</p>
+    </lightning-card>
+    <lightning-button
+                variant="success"
+                label="Subscribe"
+                title="Subscribe"
+                onclick={handleSubscribe}
+                disabled={isSubscribeDisabled}
+                class="slds-m-left_x-small"
+            ></lightning-button>
+</template>
