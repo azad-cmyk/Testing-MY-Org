@@ -32,7 +32,7 @@ export default class SubscriptionSeatUpdate extends LightningElement {
     }
 
     handleCancel() {
-        console.log('handleCancel call');
+        console.log('handleCancel call for Subscription Seat Update');
         this.isShowModal = false;
     }
      @wire(getRecord, { recordId: '$recordId', fields: FIELDS })
